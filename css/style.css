@@ -485,6 +485,14 @@ figcaption>h4 {
     padding: 10px 80px;
 }
 
+.play-stop i:hover{
+    transform: scale(1.2);
+}
+
+.div-volume i:hover{
+    transform: scale(1.2);
+}
+
 .music-duration {
     padding: 5px;
 }

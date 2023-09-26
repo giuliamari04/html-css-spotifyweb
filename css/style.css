@@ -1,0 +1,203 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark-color: #141922;
+    --color-dark-grey: #282828;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-grey: #717171;
+    --color-light-grey: #C1C1C1;
+    --color-highlight: #ADFF2F;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+/* *********************************************
+                    utility
+ ********************************************* */
+.uppercase{
+    text-transform: uppercase;
+}
+/* *********************************************
+                    wrapper
+ ********************************************* */
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+#call-to-action {
+    background-color: rgba(0, 0, 0, 0.592);
+    width: calc(100% - 250px);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: var(--color-dark-grey);
+}
+
+.menu {
+    width: 250px;
+    background-color: var(--color-black);
+
+}
+
+#main-content {
+    width: calc(100% - 250px);
+    background-color: var(--color-dark-color);
+    overflow-y: auto;
+    padding: 90px 10px 0 10px;
+}
+
+.header-fixed {
+    width: 100%;
+    height: 10%;
+}
+
+.music-bar {
+    width: 100%;
+    height: 90px;
+    background-color: var(--color-dark-grey);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+/* *********************************************
+                    contenuto main
+ ********************************************* */
+#nav-main ul li{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: small;
+}
+
+#nav-main ul li:hover{
+    border-bottom: 2px solid var(--color-highlight);
+   
+}
+
+.album {
+    width: calc(100% / 6 );
+    height: 200px;
+    padding: 5px;
+    margin-top: 20px;
+   
+}
+
+.img-album{
+    width: 100%;
+    height:100% ;
+    background-color: #ADFF2F;
+    margin: 0 auto;  
+}
+
+.text.album{
+    width: 80%;
+}
+
+.button{
+    border-radius: 20px;
+    border: 1px solid var(--color-white);
+    padding: 10px 30px;
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+/* *********************************************
+                    flex
+ ********************************************* */
+
+.flex {
+    display: flex;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.stretch {
+    display: flex;
+    justify-content: stretch;
+}
+
+.left{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.debug {
+    border: 2px solid blue;
+}
+
+/* *********************************************
+                    text
+ ********************************************* */
+.text-center{
+    text-align: center;
+}
+ .text-white{
+    color: var(--color-white);
+ }
+
+ .text-grey{
+    color: var(--color-grey);
+ }
+
+ .text-grey-light{
+    color: var(--color-light-grey);
+ }
+
+ h3{
+    font-size: 0.7em;
+ }
+
+ h4{
+    font-size: xx-small;
+ }
+/* prima desktop first per media query */
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (min-width:367px) {}
+
+/* bonus */
+
+/* 
+bottone si ingrandisce 
+hover lista 
+hover e effetti su album
+hover e active sul menu centrale 
+hover su barra musicale 
+*/

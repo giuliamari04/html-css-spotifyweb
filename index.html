@@ -27,43 +27,55 @@
         <main class=" flex ">
 
             <!-- menù -->
-            <nav class="menu stretch  column">
-                <div class=" logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <div class=" menu-navbar text-grey">
-                    <ul>
-                        <li><i class="fa-solid fa-house icon"></i> Home</li>
-                        <li><i class="fa-solid fa-magnifying-glass icon"></i> Cerca</li>
-                        <li><i class="fa-solid fa-lines-leaning fa-flip-horizontal icon"></i> La tua libreria</li>
-                    </ul>
-                </div>
-                <div class=" playlist">
-                    <h3 class="text-white uppercase">playlist</h3>
-                    <ul class="text-grey">
-                        <li class="flex">
-                            <div class="cubetto center">
-                                <i class="fa-solid fa-plus"></i>
-                            </div>
-                            <span class="center">Crea Playlist</span>
-                        </li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
-                </div>
-                <div class="coda-menu px-10 column">
-                    <div class="text-grey border-bottom-grey py-10 installa">
-                        <i class="fa-regular fa-circle-down "></i> Installa app
+            <nav class="menu2 column">
+                <ul>
+                    <li><img src="img/logo-small.svg" alt="logo piccolo" class="logo-small"></li>
+                    <li><i class="fa-solid fa-house icon"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass icon"></i></li>
+                    <li><i class="fa-solid fa-lines-leaning fa-flip-horizontal icon"></i></li>
+                </ul>
+            </nav>
+            <nav class="menu stretch space-between column">
+                <div class="menu-scroll">
+                    <div class=" logo">
+                        <img src="img/logo.svg" alt="logo">
                     </div>
-                    <div class="flex text-white py-10">
-                        <div class="cubetto border-circle"><img src="img/profile.svg" alt="profilo"></div>
+                    <div class=" menu-navbar text-grey">
+                        <ul>
+                            <li><i class="fa-solid fa-house icon"></i> Home</li>
+                            <li><i class="fa-solid fa-magnifying-glass icon"></i> Cerca</li>
+                            <li><i class="fa-solid fa-lines-leaning fa-flip-horizontal icon"></i> La tua libreria</li>
+                        </ul>
+                    </div>
+                    <div class=" playlist">
+                        <h3 class="text-white uppercase">playlist</h3>
+                        <ul class="text-grey">
+                            <li class="flex">
+                                <div class="cubetto center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <span class="center">Crea Playlist</span>
+                            </li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="coda-menu px-10 column">
+                        <div class="text-grey border-bottom-grey py-10 installa">
+                            <i class="fa-regular fa-circle-down "></i> Installa app
+                        </div>
+                        <div class="flex text-white py-10">
+                            <div class="cubetto border-circle"><img src="img/profile.svg" alt="profilo"></div>
 
-                        <span class="center">Giulia Mariano</span>
+                            <span class="center">Giulia Mariano</span>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -73,7 +85,7 @@
 
                 <!-- lista main -->
                 <nav id="nav-main" class="text-grey text-center center">
-                    <ul class="flex">
+                    <ul class="flex flex-wrap">
                         <li>in evidenza</li>
                         <li>podcast</li>
                         <li>classifiche</li>
@@ -86,15 +98,15 @@
                 <!-- recently -->
                 <section id="recently" class="margin-top">
                     <h2 class=" text-white">Recently played</h2>
-                    <div class=" flex">
+                    <div class=" flex flex-wrap">
 
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo1 ">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
-                               
+
                             </div>
                             <figcaption class="text-album text-center">
                                 <h3 class="text-white">Heavy metal</h3>
@@ -105,7 +117,7 @@
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo2">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
                             </div>
@@ -118,7 +130,7 @@
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo3">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
                             </div>
@@ -131,7 +143,7 @@
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo4">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
                             </div>
@@ -144,7 +156,7 @@
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo5">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
                             </div>
@@ -157,7 +169,7 @@
                         <!-- album  -->
                         <div class="album">
                             <div class="img-album sfondo6">
-                                <div class="play center"> 
+                                <div class="play center">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </div>
                             </div>
@@ -190,7 +202,7 @@
                             <div class="img-album sfondo8"></div>
                             <figcaption class="text-album text-center">
                                 <h3 class="text-white">Daily Mix 1</h3>
-                                
+
                             </figcaption>
                         </div>
 
@@ -217,7 +229,7 @@
                             <div class="img-album-tondo sfondo10"></div>
                             <figcaption class="text-album text-center">
                                 <h3 class="text-white">Daily Mix 1</h3>
-                                
+
                             </figcaption>
                         </div>
 
@@ -241,7 +253,7 @@
                         </div>
                     </div>
 
-                    <span class="center">
+                    <span class="center icon-bar">
                         <i class="fa-regular fa-heart text-grey icon"></i>
                         <i class="fa-regular fa-folder text-grey icon"></i>
                     </span>
@@ -258,11 +270,11 @@
                     </div>
                     <div class="music-duration text-grey flex">
                         <h5 class="px-10">0:25</h5>
-                         <div class="barra-musica">
+                        <div class="barra-musica">
                             <div class="progress-bar">
                                 <div class="dot"></div>
                             </div>
-                    </div>
+                        </div>
                         <h5 class="px-10">4:35</h5>
                     </div>
                 </div>
@@ -273,13 +285,13 @@
                     <div class="px-10 text-white flex ">
                         <i class="fa-solid fa-list icon"></i>
                         <i class="fa-solid fa-desktop icon"></i>
-                        <i class="fa-solid fa-volume-high icon"></i> 
-                     </div>
-                     
-                     <div class="volume-track">
-                            <div class="progress-bar">
-                                <div class="dot"></div>
-                            </div>
+                        <i class="fa-solid fa-volume-high icon"></i>
+                    </div>
+
+                    <div class="volume-track">
+                        <div class="progress-bar">
+                            <div class="dot"></div>
+                        </div>
                     </div>
                 </div>
             </div>

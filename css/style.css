@@ -15,47 +15,48 @@
     --color-highlight: #ADFF2F;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: inherit;
 }
+
 /* *********************************************
                     utility
  ********************************************* */
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
-.px-10{
+.px-10 {
     padding: 0 10px;
 }
 
-.py-10{
-    padding: 10px 0;   
+.py-10 {
+    padding: 10px 0;
 }
 
-.border-bottom-grey{
+.border-bottom-grey {
     border-bottom: 1px solid var(--color-grey);
 }
 
-.border-circle{
+.border-circle {
     border-radius: 50%;
     overflow: hidden;
 }
 
-.margin-top{
+.margin-top {
     margin-top: 50px;
 }
 
-.margin-bottom{
+.margin-bottom {
     margin-bottom: 50px;
 }
 
@@ -65,22 +66,23 @@ a{
                     flex
  ********************************************* */
 
- .flex {
+.flex {
     display: flex;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.center-left{
+.center-left {
     display: flex;
     align-items: flex-start;
 }
@@ -91,12 +93,12 @@ a{
     align-content: stretch;
 }
 
-.space-between{
+.space-between {
     display: flex;
     justify-content: space-between;
 }
 
-.left{
+.left {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -108,28 +110,29 @@ a{
 /* *********************************************
                     text
  ********************************************* */
- .text-center{
+.text-center {
     text-align: center;
 }
- .text-white{
+
+.text-white {
     color: var(--color-white);
- }
+}
 
- .text-grey{
+.text-grey {
     color: var(--color-grey);
- }
+}
 
- .text-grey-light{
+.text-grey-light {
     color: var(--color-light-grey);
- }
+}
 
- h3{
+h3 {
     font-size: 1.0em;
- }
+}
 
- h4{
-    font-size:0.7em;
- }
+h4 {
+    font-size: 0.7em;
+}
 
 /* *********************************************
                     wrapper
@@ -147,6 +150,7 @@ a{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1000;
 
 }
 
@@ -162,7 +166,23 @@ main {
     background-color: var(--color-black);
     font-size: 0.7em;
     font-weight: 600;
+    margin-bottom: 90px;
 
+}
+
+.menu2{
+    width: 50px;
+    height: 100%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 0.7em;
+    font-weight: 600;
+    margin-bottom: 90px;   
+}
+
+.logo-small{
+    width: 30px;
+    padding: 5px;
 }
 
 #main-content {
@@ -191,126 +211,133 @@ main {
 /* *********************************************
                     contenuto main
  ********************************************* */
-#nav-main ul li{
+#nav-main ul li {
     padding: 5px 10px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: small;
 }
 
-#nav-main ul li:first-child{
-    border-bottom: 2px solid var(--color-highlight);   
+#nav-main ul li:first-child {
+    border-bottom: 2px solid var(--color-highlight);
     color: var(--color-white);
 }
 
-#nav-main ul li:hover{
+#nav-main ul li:hover {
     color: var(--color-white);
-   
-}
-#nav-main ul li:active{
-    border-bottom: 2px solid var(--color-highlight);   
+
 }
 
-#recently{
+#nav-main ul li:active {
+    border-bottom: 2px solid var(--color-highlight);
+}
+
+#recently {
     padding: 20px;
 }
 
-#creato-per-me{
+#creato-per-me {
     padding: 40px 20px;
 }
 
 .album {
-    width: calc(100% / 6 );
+    width: calc(100% / 6);
     height: 200px;
     padding: 5px;
     margin-top: 20px;
-   
+
 }
 
-.img-album{
+.img-album {
     width: 100%;
-    height:100% ;
-    margin: 0 auto;  
+    height: 100%;
+    margin: 0 auto;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
 }
 
-.img-album-tondo{
+.img-album-tondo {
     width: 100%;
-    height:100% ;
-    margin: 0 auto;  
+    height: 100%;
+    margin: 0 auto;
     border-radius: 50%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-figcaption > h4{
-    padding:10px 0;
+figcaption>h4 {
+    padding: 10px 0;
 }
 
 /* sfondi album recently */
-.sfondo1{
+.sfondo1 {
     background-image: url(../img/metal_lifting.jpg);
 }
-.sfondo2{
+
+.sfondo2 {
     background-image: url(../img/stranger.jpeg);
 }
-.sfondo3{
+
+.sfondo3 {
     background-image: url(../img/aquietplace.jpeg);
 }
-.sfondo4{
+
+.sfondo4 {
     background-image: url(../img/split.jpeg);
 }
-.sfondo5{
+
+.sfondo5 {
     background-image: url(../img/cure.jpeg);
 }
-.sfondo6{
+
+.sfondo6 {
     background-image: url(../img/sinister.jpeg);
 }
 
 /* sfondo album per me */
 
-.sfondo7{
+.sfondo7 {
     background-image: url(../img/radar.jpeg);
 }
 
-.sfondo8{
+.sfondo8 {
     background-image: url(../img/mixdaily.jpeg);
 }
 
 /* sfondi artisti popolari */
 
-.sfondo9{
+.sfondo9 {
     background-image: url(../img/youg.jpeg);
 }
 
-.sfondo10{
+.sfondo10 {
     background-image: url(../img/einaudi.jpeg);
 }
 
-.play{
+.play {
     position: absolute;
     opacity: 0;
     width: 100%;
     height: 100%;
     font-size: 3em;
     color: var(--color-white);
-    
+
 }
 
-.play:hover{
+.play:hover {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.556);
 }
-.text-album{
+
+.text-album {
     width: 100%;
     padding-top: 10px;
 }
 
-.button{
+.button {
     border-radius: 20px;
     border: 1px solid var(--color-white);
     padding: 10px 30px;
@@ -320,58 +347,58 @@ figcaption > h4{
     transition: 1s;
 }
 
-.button:hover{
+.button:hover {
     scale: 1.2;
     border: 2px solid var(--color-white);
     box-shadow: 2px 3px 3px var(--color-light-grey);
-    text-shadow:2px 3px 3px var(--color-light-grey) ;
+    text-shadow: 2px 3px 3px var(--color-light-grey);
 }
 
 /* *********************************************
                     menù
  ********************************************* */
 
-.logo{
+.logo {
     width: 50%;
     padding: 10px;
 }
 
-.menu-navbar{
-    width: 100%;  
+.menu-navbar {
+    width: 100%;
 }
 
-.icon{
+.icon {
     padding: 5px;
 }
 
-.menu-navbar ul li{
-     padding: 5px;
+.menu-navbar ul li {
+    padding: 5px;
 }
 
-.menu-navbar ul{
+.menu-navbar ul {
     padding: 10px 0;
 }
 
-.menu-navbar ul li:first-child{
+.menu-navbar ul li:first-child {
     border-left: 3px solid var(--color-highlight);
     color: var(--color-white);
 }
 
-.menu-navbar ul li:hover{
+.menu-navbar ul li:hover {
     color: var(--color-white);
 }
 
-.menu-navbar ul li:active{
+.menu-navbar ul li:active {
     border-left: 3px solid var(--color-highlight);
     color: var(--color-white);
 }
 
-.playlist{
+.playlist {
     width: 100%;
     padding: 10px;
 }
 
-.cubetto{
+.cubetto {
     width: 30px;
     height: 30px;
     background-color: var(--color-grey);
@@ -379,102 +406,105 @@ figcaption > h4{
     color: var(--color-black);
 }
 
-.playlist ul li{
-    padding: 10px 0;    
+.playlist ul li {
+    padding: 10px 0;
 }
 
-.playlist ul li:hover{
+.playlist ul li:hover {
     color: var(--color-white);
 }
 
-.playlist ul li div:first-child:hover{
+.playlist ul li div:first-child:hover {
     background-color: var(--color-white);
 }
 
 
-.installa:hover{
+.installa:hover {
     text-decoration: underline;
     color: var(--color-white);
 }
 
-.coda-menu{
+.coda-menu {
     width: 250px;
-    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* position: fixed;
     bottom: 90px;
-    left: 0;
+    left: 0; */
 }
 
 /* *********************************************
                     music bar
  ********************************************* */
- /* sinistra */
- .album-canzone{
+/* sinistra */
+.album-canzone {
     width: 15%;
     height: 90px;
- }
+}
 
- .piccolo-album{
+.piccolo-album {
     width: 130px;
     height: 40px;
-    
- }
+}
 
- .piccola-img{
+.piccola-img {
     width: 30%;
-    height:100% ;
+    height: 100%;
     background-image: url(../img/sinister.jpeg);
     background-position: center;
     background-size: contain;
     margin: 0 auto;
- }
+}
 
- .piccolo-testo{
+.piccolo-testo {
     width: 70%;
     padding: 10px;
     font-size: 0.8em;
- }
- .fa-folder:hover{
-    color: var(--color-white);
- }
+}
 
- .fa-heart:hover{
+.fa-folder:hover {
     color: var(--color-white);
- }
+}
 
- /* centro */
- .tasti-brano{
+.fa-heart:hover {
+    color: var(--color-white);
+}
+
+/* centro */
+.tasti-brano {
     width: 30%;
     height: 90px;
- }
+}
 
- .play-stop{
+.play-stop {
     font-size: 1.2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 80px;
- }
+}
 
- .music-duration{
+.music-duration {
     padding: 5px;
- }
+}
 
- .volume-track {
+.volume-track {
     width: 40%;
     height: 6px;
-    background-color:var(--color-grey); 
-    border-radius: 10px; 
+    background-color: var(--color-grey);
+    border-radius: 10px;
     position: relative;
-  }
-  
-  .progress-bar {
-    width: 30%; 
-    height: 100%;
-    background-color:var(--color-light-grey); 
-    border-radius: 10px;  
-  }
+}
 
-.dot{
+.progress-bar {
+    width: 30%;
+    height: 100%;
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+}
+
+.dot {
     opacity: 0;
     width: 10px;
     height: 10px;
@@ -483,46 +513,188 @@ figcaption > h4{
     left: 90%;
     bottom: 2px;
     position: relative;
-    }
+}
 
-.dot:hover{
+.dot:hover {
     opacity: 1;
 }
 
-.progress-bar:hover{
+.progress-bar:hover {
     background-color: var(--color-highlight);
-  }
+}
 
- .barra-musica{
+.barra-musica {
     width: 100%;
     height: 6px;
-    background-color:var(--color-grey); 
-    border-radius: 10px; 
+    background-color: var(--color-grey);
+    border-radius: 10px;
     position: relative;
- }
+}
 
 
- /* destra */
- .div-volume{
+/* destra */
+.div-volume {
     width: 20%;
     height: 90px;
- }
+}
 
- .debug {
+.debug {
     border: 2px solid blue;
 }
+
 /* prima desktop first per media query */
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+  
+    .flex-wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
 
-@media screen and (max-width:576px) {}
+    .album {
+        width: calc(100% / 4);
+        height: 200px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        font-size: 0.8em;
+    }
 
-@media screen and (min-width:367px) {}
+    .menu2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+}
+
+@media screen and (max-width:576px) {
+    .flex-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px 0;
+    }
+
+    .menu {
+        width: 200px;
+    }
+
+
+    .menu-scroll {
+        overflow-y: scroll;
+    }
+
+    #call-to-action {
+        width: calc(100% - 200px);
+
+    }
+
+    #main-content {
+        width: calc(100% - 200px);
+    }
+
+    .album {
+        width: calc(100% / 2);
+        height: 200px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        font-size: 0.8em;
+    }
+
+    .piccolo-album {
+        width: 120px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-bar {
+        font-size: 0.8em;
+    }
+
+    .icon-bar {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .album-canzone {
+        width: 20%;
+        height: 90px;
+        padding-left: 5px;
+    }
+
+    .tasti-brano {
+        width: 50%;
+        height: 90px;
+    }
+
+    .div-volume {
+        width: 30%;
+        height: 90px;
+    }
+
+    .menu2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:367px) {
+    .menu {
+        display: none;
+    }
+
+    .menu2{
+        display:block;
+    }
+
+    #call-to-action {
+        width: calc(100% - 50px);
+
+    }
+
+    .margin-top{
+        margin-top: 0;
+    }
+
+    .margin-bottom{
+        margin-bottom: 20px;
+    }
+
+    #main-content {
+        width: calc(100% - 50px);
+    }
+
+    .img-album {
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .album{
+        margin: 0;
+        height: 220px;
+    }
+    .tasti-brano{
+        width: 100%;
+    }
+    .album-canzone{
+        display: none;
+    }
+    .div-volume{
+        display: none;
+    }
+
+    
+}
 
 /* bonus */
 
 
-  
+
 /* 
 bottone si ingrandisce 
 hover lista 

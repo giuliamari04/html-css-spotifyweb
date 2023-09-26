@@ -33,6 +33,23 @@ a{
 .uppercase{
     text-transform: uppercase;
 }
+
+.px-10{
+    padding: 0 10px;
+}
+
+.py-10{
+    padding: 10px 0;   
+}
+
+.border-bottom-grey{
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.border-circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
 /* *********************************************
                     wrapper
  ********************************************* */
@@ -60,7 +77,10 @@ main {
 
 .menu {
     width: 250px;
+    height: 100%;
     background-color: var(--color-black);
+    font-size: 0.7em;
+    font-weight: 600;
 
 }
 
@@ -97,9 +117,17 @@ main {
     font-size: small;
 }
 
+#nav-main ul li:first-child{
+    border-bottom: 2px solid var(--color-highlight);   
+    color: var(--color-white);
+}
+
 #nav-main ul li:hover{
-    border-bottom: 2px solid var(--color-highlight);
+    color: var(--color-white);
    
+}
+#nav-main ul li:active{
+    border-bottom: 2px solid var(--color-highlight);   
 }
 
 .album {
@@ -130,6 +158,73 @@ main {
 }
 
 /* *********************************************
+                    menù
+ ********************************************* */
+
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+.menu-navbar{
+    width: 100%;  
+}
+
+.icon{
+    padding: 5px;
+}
+
+.menu-navbar ul li{
+     padding: 5px;
+}
+
+.menu-navbar ul{
+    padding: 10px 0;
+}
+
+.menu-navbar ul li:first-child{
+    border-left: 3px solid var(--color-highlight);
+    color: var(--color-white);
+}
+
+.menu-navbar ul li:hover{
+    color: var(--color-white);
+}
+
+.menu-navbar ul li:active{
+    border-left: 3px solid var(--color-highlight);
+    color: var(--color-white);
+}
+
+.playlist{
+    width: 100%;
+    padding: 10px;
+}
+
+.cubetto{
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-grey);
+    margin-right: 5px;
+    color: var(--color-black);
+}
+
+.playlist ul li{
+    padding: 10px 0;    
+}
+
+.playlist ul li:hover{
+    color: var(--color-white);
+}
+
+.coda-menu{
+    width: 250px;
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+}
+
+/* *********************************************
                     flex
  ********************************************* */
 
@@ -137,6 +232,10 @@ main {
     display: flex;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+}
 .center{
     display: flex;
     justify-content: center;
@@ -146,7 +245,8 @@ main {
 
 .stretch {
     display: flex;
-    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .left{
@@ -155,6 +255,7 @@ main {
     align-items: center;
 
 }
+
 .debug {
     border: 2px solid blue;
 }
@@ -178,11 +279,11 @@ main {
  }
 
  h3{
-    font-size: 0.7em;
+    font-size: 1.0em;
  }
 
  h4{
-    font-size: xx-small;
+    font-size:0.7em;
  }
 /* prima desktop first per media query */
 
@@ -200,4 +301,20 @@ hover lista
 hover e effetti su album
 hover e active sul menu centrale 
 hover su barra musicale 
+*/
+
+/*icons
+
+<i class="fa-solid fa-house"></i> --home
+<i class="fa-solid fa-magnifying-glass"></i> --search-lens
+<i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> --libraries
+<i class="fa-solid fa-plus"></i> --plus/add
+<i class="fa-regular fa-circle-down"></i> --download-app
+<i class="fa-regular fa-heart"></i> --heart
+<i class="fa-regular fa-folder"></i> --folder
+<i class="fa-solid fa-list"></i> --list
+<i class="fa-solid fa-desktop"></i> --desktop
+<i class="fa-solid fa-volume-high"></i> --volume
+<i class="fa-regular fa-circle-play"></i> --play
+
 */

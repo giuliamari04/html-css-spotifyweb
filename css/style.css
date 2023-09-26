@@ -600,6 +600,11 @@ figcaption>h4 {
         width: 30%;
         height: 90px;
     }
+
+    .play{
+        margin-top: 12%;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -672,6 +677,11 @@ figcaption>h4 {
     .menu2{
         display: none;
     }
+
+    .play{
+        margin-top: 12%;
+        height: 149px;
+    }
 }
 
 @media screen and (max-width:426px) {
@@ -721,33 +731,15 @@ figcaption>h4 {
         display: none;
     }
 
+    .play{
+        
+        height: 100%;
+    }
     
 }
 
-/* bonus */
 
 
 
-/* 
-bottone si ingrandisce 
-hover lista 
-hover e effetti su album
-hover e active sul menu centrale 
-hover su barra musicale 
-*/
 
-/*icons
 
-<i class="fa-solid fa-house"></i> --home
-<i class="fa-solid fa-magnifying-glass"></i> --search-lens
-<i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> --libraries
-<i class="fa-solid fa-plus"></i> --plus/add
-<i class="fa-regular fa-circle-down"></i> --download-app
-<i class="fa-regular fa-heart"></i> --heart
-<i class="fa-regular fa-folder"></i> --folder
-<i class="fa-solid fa-list"></i> --list
-<i class="fa-solid fa-desktop"></i> --desktop
-<i class="fa-solid fa-volume-high"></i> --volume
-<i class="fa-regular fa-circle-play"></i> --play
-
-*/

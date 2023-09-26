@@ -50,6 +50,77 @@ a{
     border-radius: 50%;
     overflow: hidden;
 }
+
+/* *********************************************
+                    flex
+ ********************************************* */
+
+ .flex {
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.center-left{
+    display: flex;
+    align-items: flex-start;
+}
+
+.stretch {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+
+/* *********************************************
+                    text
+ ********************************************* */
+ .text-center{
+    text-align: center;
+}
+ .text-white{
+    color: var(--color-white);
+ }
+
+ .text-grey{
+    color: var(--color-grey);
+ }
+
+ .text-grey-light{
+    color: var(--color-light-grey);
+ }
+
+ h3{
+    font-size: 1.0em;
+ }
+
+ h4{
+    font-size:0.7em;
+ }
+
 /* *********************************************
                     wrapper
  ********************************************* */
@@ -155,6 +226,15 @@ main {
     padding: 10px 30px;
     font-size: 0.6em;
     font-weight: 600;
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.button:hover{
+    scale: 1.2;
+    border: 2px solid var(--color-white);
+    box-shadow: 2px 3px 3px var(--color-light-grey);
+    text-shadow:2px 3px 3px var(--color-light-grey) ;
 }
 
 /* *********************************************
@@ -225,66 +305,52 @@ main {
 }
 
 /* *********************************************
-                    flex
+                    music bar
  ********************************************* */
+ .album-canzone{
+    width: 15%;
+    height: 90px;
+ }
 
-.flex {
-    display: flex;
-}
+ .piccolo-album{
+    width: 130px;
+    height: 40px;
+    
+ }
 
-.column{
-    display: flex;
-    flex-direction: column;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
+ .piccola-img{
+    width: 30%;
+    height:100% ;
+    background-color: #ADFF2F;
+    margin: 0 auto;
+ }
 
-.stretch {
-    display: flex;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-.left{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-}
-
-.debug {
-    border: 2px solid blue;
-}
-
-/* *********************************************
-                    text
- ********************************************* */
-.text-center{
-    text-align: center;
-}
- .text-white{
+ .piccolo-testo{
+    width: 70%;
+    padding: 10px;
+    font-size: 0.8em;
+ }
+ .fa-folder:hover{
     color: var(--color-white);
  }
 
- .text-grey{
-    color: var(--color-grey);
+ .fa-heart:hover{
+    color: var(--color-white);
  }
 
- .text-grey-light{
-    color: var(--color-light-grey);
+ .tasti-brano{
+    width: 20%;
+    height: 90px;
  }
 
- h3{
-    font-size: 1.0em;
+ .div-volume{
+    width: 20%;
+    height: 90px;
  }
 
- h4{
-    font-size:0.7em;
- }
+ .debug {
+    border: 2px solid blue;
+}
 /* prima desktop first per media query */
 
 @media screen and (max-width:1200px) {}

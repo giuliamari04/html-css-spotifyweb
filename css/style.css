@@ -383,6 +383,10 @@ figcaption>h4 {
     width: 100%;
 }
 
+.menu2{
+    display: none;
+}
+
 .icon {
     padding: 5px;
 }

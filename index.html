@@ -51,11 +51,13 @@
                     <div class=" playlist">
                         <h3 class="text-white uppercase">playlist</h3>
                         <ul class="text-grey">
-                            <li class="flex">
-                                <div class="cubetto center">
+                            <li >
+                                <div class="flex">
+                                <div class="cubetto center white">
                                     <i class="fa-solid fa-plus"></i>
                                 </div>
                                 <span class="center">Crea Playlist</span>
+                                </div>
                             </li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
@@ -335,12 +337,12 @@
                         <i class="fa-solid fa-forward-step"></i>
                         <i class="fa-solid fa-rotate-right"></i>
                     </div>
-                    <div class="music-duration text-grey flex">
+                    <div class="music-duration text-grey center flex">
                         <h5 class="px-10">0:25</h5>
-                        <div class="barra-musica">
-                            <div class="progress-bar">
-                                <div class="dot"></div>
-                            </div>
+                        
+                        <div class="barra-musica" >
+                            <input type="range"  min="0" max="100" value="20" class="progress-music">
+                            <div class="dot"></div>
                         </div>
                         <h5 class="px-10">4:35</h5>
                     </div>
@@ -355,10 +357,9 @@
                         <i class="fa-solid fa-volume-high icon"></i>
                     </div>
 
-                    <div class="volume-track">
-                        <div class="progress-bar">
-                            <div class="dot"></div>
-                        </div>
+                    <div class="barra-volume" >
+                        <input type="range"  min="0" max="100" value="20" class="progress-music">
+                        <div class="dot"></div>
                     </div>
                 </div>
             </div>

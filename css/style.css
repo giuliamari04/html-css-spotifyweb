@@ -711,6 +711,10 @@ input::placeholder{
     .menu2 {
         display: none;
     }
+
+    .quadrati{
+        width:calc(100% / 5 - 20px);
+    }
 }
 @media screen and (max-width:1094px) {
     .album {
@@ -754,6 +758,10 @@ input::placeholder{
     .play-stop{
         padding: 10px;
     }
+
+    .quadrati{
+        width:calc(100% / 4 - 20px);
+    }
 }
 @media screen and (max-width:768px) {
     .flex-wrap {
@@ -769,20 +777,15 @@ input::placeholder{
         width: calc(100% - 200px); 
     }
 
-
     .album {
         width: calc(100% / 2 - 10px);  
     }
-
-    
 
     .menu{
         width: 200px;
         line-height: 0.5;
     }
     
-   
-
     .icon-bar {
         display: flex;
         flex-direction: column;
@@ -808,6 +811,10 @@ input::placeholder{
     .play {
         margin-top: 12%;
         height: 150px;
+    }
+
+    .quadrati{
+        width:calc(100% / 3 - 20px);
     }
 }
 @media screen and (max-width:576px) {
@@ -861,6 +868,10 @@ input::placeholder{
 
     .div-volume {
         display: none;
+    }
+
+    .quadrati{
+        width:calc(100% / 2 - 20px);
     }
 
 }

@@ -644,6 +644,13 @@ input::placeholder{
     border-radius: 10px ;
     position: relative;
     overflow: hidden;
+    transition: 1s;
+}
+
+.quadrati:hover{
+    transform: scale(1.1);
+    filter: brightness(1.4);
+    box-shadow: 3px 3px 4px var(--color-dark-grey);
 }
 
 .bg-colore1{

@@ -10,13 +10,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Album-heavy-Metal</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <main class="flex">
+        <!-- call to action -->
+        <div id="call-to-action" class="text-white space-between bg-trasparent py-10">
+            <div class="flex">
+                <div class="freccette center"><a href="../index.html"><i class="fa-solid fa-chevron-left"></i></a></div>
+                <div class="freccette center"><a href=""><i class="fa-solid fa-chevron-left fa-rotate-180"></i></a>
+                </div>
+            </div>
+            <div class="flex px-10">
+                <a href="#" class="button bottone-bianco center">esplora premium</a>
+                <a href="#" class="button bottone-nero-sfumato center">Installa App</a>
+                <a href="#" class="button bottone-nero-sfumato center"><i class="fa-solid fa-bell"></i></a>
+                <a href="#" class="button bottone-nero-sfumato center"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+        </div>
+        <main class="flex bg-sfondo-gradient margin-bottom">
 
             <!-- menù -->
             <nav class="menu2 column">
@@ -42,7 +60,7 @@
                         </ul>
                     </div>
                     <div class=" playlist">
-                        <h3 class="text-white uppercase">playlist</h3>
+                        <h3 class="text-white uppercase"><i class="fa-solid fa-magnifying-glass icon"></i></h3>
                         <ul class="text-grey">
 
                             <li>
@@ -124,10 +142,338 @@
                 </div>
             </nav>
 
+            <!-- main album -->
+            <section id="main-content-album" class="bg-sfondo-gradient">
+
+
+                <!-- intestazione-album -->
+                <section id="intestazione-album" class="">
+
+                    <div class="intestazione-album  flex flex-wrap">
+                        <div class="">
+                            <img src="../img/metal_lifting.jpg" alt="metal" class="img-album2">
+                        </div>
+                        <div class="text-white text-album px-10 align-bot">
+                            <h5>Playlist</h5>
+                            <h1 class="tiolo-album">Heavy Metal</h1>
+                            <h5>Sustitute</h5>
+                            <div class="flex align-center">
+                                <img src="../img/logo-small.svg" alt="" class="logo-small">
+                                <h5><strong> 50 brani,</strong> circa 2 ore</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section id="play-heart" class=" align-center text-grey flex">
+                    <div class="cerchietto-verde transition-1s center">
+                        <span ><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <div class="center">
+                        <i class="fa-regular fa-heart fa-2xl px-10s transition-1s hover-icon"></i>
+                    </div>
+                    <div class="center">
+                        <i class="fa-solid fa-ellipsis fa-2xl px-10 transition-1s hover-icon"></i>
+                    </div>
+                    
+
+                </section>
+
+                <!-- brani album -->
+
+                <section id="brani-album" class="bg-trasparent  ">
+                    <!-- tre colonne titolo e album e durata canzone -->
+
+
+                    <div class=" flex contenitore-brani">
+                        <div class="titolo-brani align-center">
+                            <h5 class="text-grey px-10"># Titolo</h5>
+                        </div>
+
+                        <div class="album-brani align-center">
+                            <h5 class="text-grey  ">Album</h5>
+                        </div>
+                        <div class="durata-brani align-center ">
+                            <h5 class="text-grey"><i class="fa-regular fa-clock"></i></h5>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- primo brano -->
+                    <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                                <h5 class="text-grey px-10">1</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                    <!-- secondo brano -->
+                    <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">2</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                    <!-- terzo brano -->
+                    <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">3</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                    <!-- quarto brano -->
+                    <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">4</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                    <!-- quinto brano -->
+                    <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">5</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                     <!-- sesto brano -->
+                     <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">6</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                     <!-- settimo brano -->
+                     <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">7</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                     <!-- ottavo brano -->
+                     <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">8</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                     <!-- nono brano -->
+                     <div class=" flex contenitore-brani  ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">9</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+                    <!--  brano -->
+                    <div class=" flex contenitore-brani ">
+                        <div class="titolo-brani flex align-center">
+                            <div class="px-10 flex">
+                                <div class="soundwave-container-vuoto">
+
+                                </div>
+                                <h5 class="text-grey px-10">10</h5>
+                            </div>
+
+                            <div class=" albumart center">
+
+                            </div>
+                            <div class="px-10">
+                                <h5 class="text-white">Titolo canzone</h5>
+                                <span class="center text-grey">autore canzone</span>
+                            </div>
+                        </div>
+                        <div class="album-brani ">
+                            <span class="text-grey align-center">Substitute</span>
+                        </div>
+                        <div class="durata-brani">
+                            <span class="text-grey">3:24</span>
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </section>
+
+
 
         </main>
-        <div class="music-bar bg-black ">
-            <div class="space-between">
+
+        <div class="music-bar bg-black border-shadow">
+            <div class="space-between ">
 
                 <div class="container">
                     <div class="music-container">

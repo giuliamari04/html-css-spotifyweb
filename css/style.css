@@ -174,9 +174,10 @@ h4 {
     width: 100%;
     height: 100vh;
 }
-
-#call-to-action {
+.bg-call-to-action{
     background-color: rgba(0, 0, 0, 0.592);
+}
+#call-to-action {
     width: calc(100% - 250px);
     height: 70px;
     position: fixed;
@@ -343,14 +344,15 @@ figcaption>h4 {
     width: 100%;
     padding-top: 10px;
 }
-
-.button {
-    border-radius: 20px;
-    border: 1px solid var(--color-white);
+.padding-margin-button{
     padding: 10px 30px;
     font-size: 0.6em;
     font-weight: 600;
     margin-right: 20px;
+    border: 1px solid var(--color-white);
+}
+.button {
+    border-radius: 20px;
     transition: 1s;
 }
 
@@ -695,17 +697,49 @@ input::placeholder{
  ********************************************* */
 
 
+.bg-sfondo-gradient{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(22,86,86,1) 78%, rgba(34,193,195,1) 100%);
+}
+
+.bg-black-sfumato{
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.bottone-bianco{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding:0px 20px;
+    
+    margin: 5px;
+}
+
+.bottone-nero-sfumato{
+    background-color:rgba(0, 0, 0, 0.541);
+    color: var(--color-white);
+    padding: 0px 20px;
+    margin: 5px;
+}
+
+.bg-trasparent{
+    background-color: transparent;
+}
+
+.border-shadow{
+    box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.5);
+
+}
   .container {
-    width: 17%;
-    margin: 15px;
+    width: 15%;
+    margin: 19px;
     background-color: var(--color-dark-grey);
+    border-radius: 5px;
   }
   .music-container {
     display: flex;
     align-items: center;
     align-self: center;
-    height: 60px;
-    padding: 0 15px 0 15px;
+    height: 50px;
+    padding: 0 10px 0 10px;
     border-radius: 4px;
     box-shadow: 0 2px 5px 2px rgba(0,0,0,0.4);
   }
@@ -829,24 +863,23 @@ input::placeholder{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
     border-radius: 4px;
   }
   .title { 
     color: #1dd05d;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0; margin: 2px 0 6px;
   }
   .artist {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0; margin: 2px 0;
     color: #baaebc;
   }
   .artist:hover {
-    border-bottom: 1px solid;
-    margin-top: -0.5px;
+    color: var(--color-white);
     cursor: pointer;
   }
   .animate {
@@ -879,8 +912,112 @@ input::placeholder{
     cursor: pointer;
   }
 
-  
 
+#intestazione-album{
+    width: 100%;
+   
+}
+
+#main-content-album {
+    width: calc(100% - 250px);
+    padding: 90px 0px 0px 20px;
+    overflow-x: hidden;
+}
+
+#brani-album{
+   width: ;
+    overflow-y: auto;
+    
+    
+}
+
+.align-center{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.tiolo-album{
+    font-size: 4em;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+.align-bot{
+    padding-top: 50px;
+}
+
+#play-heart{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    
+    
+}
+#brani-album{
+    width: 100%;
+    height: 300px;
+    font-weight: 500;
+    font-size: 0.9em;
+    
+}
+.contenitore-brani{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.titolo-brani{
+    width: 60%; 
+}
+
+hr{
+    opacity: 0.4;
+}
+.album-brani{
+    width: 35%;
+   padding: 10px;
+   
+}
+
+.durata-brani{
+    width: 5%;
+   padding: 10px;
+    
+}
+
+.soundwave-container-vuoto{
+    width: 30px;
+    margin: 7px;
+
+}
+
+.cerchietto-verde{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(31, 223, 100);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.5em;
+    color: var(--color-black);
+    margin-right: 30px;
+}
+
+.cerchietto-verde:hover{
+    transform: scale(1.2);
+    filter: brightness(2);
+}
+
+.transition-1s{
+    transition: 1s;
+}
+.hover-icon:hover{
+    color: var(--color-white);
+    transform: scale(1.2);
+}
 /* prima desktop first per media query */
 
 @media screen and (max-width:1200px) {
@@ -1009,6 +1146,8 @@ input::placeholder{
     .quadrati{
         width:calc(100% / 3 - 20px);
     }
+
+
 }
 @media screen and (max-width:576px) {
 

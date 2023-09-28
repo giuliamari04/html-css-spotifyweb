@@ -199,6 +199,7 @@ main {
     font-size: 0.7em;
     font-weight: 600;
     margin-bottom: 90px;
+    overflow: hidden;
 
 }
 
@@ -210,6 +211,7 @@ main {
     font-size: 0.7em;
     font-weight: 600;
     margin-bottom: 90px;
+    overflow: hidden;
 }
 
 .logo-small {
@@ -295,7 +297,6 @@ figcaption{
 .contenitore-immagine {
     position: relative;
     width: 100%;
-    height: 200px;
     background-repeat: no-repeat;
     margin: 0 auto;
 
@@ -739,9 +740,7 @@ input::placeholder{
         height: 300px;
     }
 
-    .contenitore-immagine{
-        height: 90%;
-    }
+    
 
     .menu2 {
         display: none;
@@ -764,10 +763,7 @@ input::placeholder{
         width: 200px;
         line-height: 0.5;
     }
-    .contenitore-immagine{
-        height: 80%;
-    }
-
+   
     .menu2 {
         display: none;
     }

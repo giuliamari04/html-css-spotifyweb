@@ -497,10 +497,11 @@ figcaption>h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5px 80px;
+    padding: 5px 80px; 
+   
 }
 
-.play-stop i:hover {
+.play-stop a:hover {
     transform: scale(1.2);
 }
 

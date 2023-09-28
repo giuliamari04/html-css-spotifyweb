@@ -510,54 +510,47 @@ figcaption>h4 {
     padding: 5px;
 }
 
-.progress-bar {
-    width: 30%;
-    height: 100%;
-    background-color: var(--color-white);
-    border-radius: 10px;
-}
-
-.progress-music::-webkit-slider-runnable-track {
-    width: 100%; 
-    background: linear-gradient(to right,var(--color-light-grey) 0%, var(--color-light-grey) 20%,var(--color-grey) 20%, var(--color-grey)  100%); 
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 7px;
     border-radius: 5px;
+    background-image: linear-gradient(var(--color-grey), var(--color-grey));
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--color-white);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition:1s;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
   }
 
-  .progress-music::-webkit-slider-runnable-track:hover{
-    background: linear-gradient(to right,var(--color-highlight) 0%, var(--color-highlight) 20%,var(--color-grey) 20%, var(--color-grey)  100%); 
+  input[type="range"]:hover {
+    background-image: linear-gradient(var(--color-highlight), var(--color-highlight)); 
   }
-
-.progress-bar:hover {
-    background-color: var(--color-white);
-}
+  
+  input[type="range"]:hover::-webkit-slider-thumb {
+    background: var(--color-highlight); 
+  }
 
 .barra-musica {
-    width: 100%;
-    
+    width: 100%;   
 }
 
-.progress-music{
-    width: 100%; 
-    height: 5px; 
-    border-radius: 10px; 
-    outline: none; 
-    -webkit-appearance: none; 
-    position: relative;
-    
-}
-
-.progress-music::-webkit-slider-thumb {
-    width: 5px; 
-    height: 5px; 
-    background-color: var(--color-light-grey); 
-    border-radius: 20px;
-    -webkit-appearance: none;  
-  }
-
-  .progress-music::-webkit-slider-thumb:hover{
-    transform: scale(3);
-    background-color: var(--color-white); 
-  }
 
 /* destra */
 .div-volume {

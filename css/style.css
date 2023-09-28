@@ -601,6 +601,7 @@ input[type="range"] {
     background-color:rgba(0, 0, 0, 0.339);
     padding:  10px;
     margin:0  5px;
+    transition: 0.5s;
 }
 
 .freccette:hover{
@@ -925,7 +926,7 @@ input::placeholder{
 }
 
 #brani-album{
-   width: ;
+  
     overflow-y: auto;
     
     
@@ -1042,14 +1043,17 @@ hr{
     .quadrati{
         width:calc(100% / 5 - 20px);
     }
+
+    .container {
+        width: 17%;
+       
+      }
 }
 @media screen and (max-width:1094px) {
     .album {
         width: calc(100% / 3 - 10px);
         height: 300px;
     }
-
-    
 
     .menu2 {
         display: none;
@@ -1070,7 +1074,7 @@ hr{
     }
     .menu{
         width: 200px;
-        line-height: 0.5;
+        line-height: 0.6;
     }
 
     .coda-menu {
@@ -1087,6 +1091,11 @@ hr{
 
     .quadrati{
         width:calc(100% / 4 - 20px);
+    }
+
+    .py-5px{
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 @media screen and (max-width:768px) {
@@ -1146,6 +1155,10 @@ hr{
     .quadrati{
         width:calc(100% / 3 - 20px);
     }
+
+    .container {
+       opacity: 0;
+      }
 
 
 }

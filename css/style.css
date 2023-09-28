@@ -449,9 +449,11 @@ figcaption>h4 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    /* position: fixed;
+    background-color: var(--color-black);
+    position: fixed;
     bottom: 90px;
-    left: 0; */
+    left: 0;
+    z-index: 100;
 }
 
 /* *********************************************
